@@ -1,61 +1,62 @@
-# Shadcn-UI Template Usage Instructions
+# WebMistri
 
-## technology stack
+**WebMistri** is an AI-powered website builder that transforms a single line of text into a fully functional, styled website in seconds. Built as a hackathon project, it leverages the Gemini API to generate HTML, CSS, and JavaScript code, providing users with a seamless experience to create and deploy websites effortlessly.
 
-This project is built with:
+## ✨ Key Features
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+- **AI Website Generation**: Input a simple prompt, and WebMistri generates a complete website with HTML, CSS, and JavaScript.
+- **Real-Time Preview**: Instantly preview the generated website before downloading.
+- **Download as ZIP**: Export the generated website as a ZIP file for easy deployment.
+- **History Tracking**: Automatically saves previously generated websites for future access.
+- **Customizable Output**: Edit, tweak, and regenerate parts of your website as needed.
 
-All shadcn/ui components have been downloaded under `@/components/ui`.
+## 🛠️ Tech Stack
 
-## File Structure
+- **Frontend**: React, Tailwind CSS
+- **Backend**: Node.js, Express
+- **AI Integration**: Gemini API
+- **Database**: MongoDB (for storing history of generated websites)
 
-- `index.html` - HTML entry point
-- `vite.config.ts` - Vite configuration file
-- `tailwind.config.js` - Tailwind CSS configuration file
-- `package.json` - NPM dependencies and scripts
-- `src/app.tsx` - Root component of the project
-- `src/main.tsx` - Project entry point
-- `src/index.css` - Existing CSS configuration
+## 🚀 Getting Started
 
-## Components
+1. Clone the repository:
 
-- All shadcn/ui components are pre-downloaded and available at `@/components/ui`
+   ```bash
+   git clone https://github.com/harshitmasiwal/WebMistri.git
+   cd WebMistri
+   ```
 
-## Styling
+2. Install dependencies:
 
-- Add global styles to `src/index.css` or create new CSS files as needed
-- Use Tailwind classes for styling components
+   ```bash
+   npm install
+   ```
 
-## Development
+3. Add your **Gemini API key** in the `.env` file:
 
-- Import components from `@/components/ui` in your React components
-- Customize the UI by modifying the Tailwind configuration
+   ```
+   GEMINI_API_KEY=your_api_key_here
+   ```
 
-## Note
+4. Start the development server:
 
-The `@/` path alias points to the `src/` directory
+   ```bash
+   npm run dev
+   ```
 
-# Commands
+## 📂 Project Workflow
 
-**Install Dependencies**
+1. Enter a prompt (e.g., “Portfolio website with navbar, hero section, and contact form”).
+2. Gemini API generates the **HTML, CSS, and JavaScript** files.
+3. The generated site is displayed in real-time preview.
+4. You can **save**, **download as ZIP**, or **deploy** to hosting platforms.
 
-```shell
-pnpm i
-```
+## 📜 Future Enhancements
 
-**Start Preview**
+- Drag-and-drop editor for customization.
+- Multi-page website generation.
+- Direct deployment integration (GitHub Pages, Vercel, Netlify).
 
-```shell
-pnpm run dev
-```
+---
 
-**To build**
-
-```shell
-pnpm run build
-```
+⚡ Built with by **Harshit**
